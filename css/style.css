@@ -2,6 +2,7 @@
     --main-cinza: #CCCCCC;
     --main-branco: #FFFFFF;
     --main-preto: #000000;
+    --main-amarelo: #d29417;
 }
 
 * {
@@ -9,7 +10,7 @@
 }
 
 body {
-    background: url(../img/fundo.jpg);
+    background: url(../img/background-novo.jpg);
     background-position: center center;
     background-size: cover cover;
     padding: 0;
@@ -19,6 +20,22 @@ body {
 
 body, input {
     font-family: 'Teko', sans-serif;
+}
+
+.menu {
+    background-color: var(--main-amarelo);
+    display: flex;
+    border-bottom: 4px inset #9c6a06;
+    margin-bottom: 4rem;
+}
+
+.menu__titulo{
+    color: #1a1919;
+    font-size: 3rem;
+    margin: 0;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 main {
@@ -138,14 +155,14 @@ main {
     padding: 0.2em 1em;
     float: right;
     border: 3px solid var(--main-branco);
-    background: var(--main-branco);
+    background: var(--main-amarelo);
     clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
     cursor: pointer;
 }
 
 .producao:hover {
     background: var(--main-preto);
-    color: var(--main-branco)
+    color: var(--main-amarelo)
 }
 
 
