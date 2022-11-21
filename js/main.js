@@ -62,7 +62,7 @@ controle.forEach((elemento) =>{
 })
 
 btnAlterarCor.addEventListener("click", () =>{
-	if(i >= 5){
+	if(i >= (cores.length - 1)){
 		i = -1;
 	}
 	i++;	
