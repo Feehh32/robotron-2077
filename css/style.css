@@ -148,6 +148,12 @@ main {
     border-color: var(--main-cinza);
 }
 
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
 .producao {
     margin-top: 1em;
     font-size: 2em;

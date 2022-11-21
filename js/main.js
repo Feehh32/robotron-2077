@@ -14,6 +14,10 @@ function atualizaStatus(peca) {
 	})
 }
 
+const cores = ['Amarelo','Azul','Branco','Preto','Rosa','Vermelho'];
+const corAtual = document.querySelector('[data-cor]');
+const btnAlterarCor = document.querySelector('[data-botao]');
+let i = -1;
 const controle = document.querySelectorAll('[data-controle]'); 
 const estatisticas = document.querySelectorAll('[data-estatisticas]');
 const pecas = {
@@ -57,4 +61,10 @@ controle.forEach((elemento) =>{
     })
 })
 
-
+btnAlterarCor.addEventListener("click", () =>{
+	if(i >= 5){
+		i = -1;
+	}
+	i++;	
+	corAtual.setAttribute('src',`img/Robotron-${cores[i]}.png`)	
+})
